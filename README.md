@@ -35,15 +35,9 @@ the skill reads only the one it needs.
 ## Installation
 
 Claude Code loads skills from `~/.claude/skills/` (global, all projects) or
-`.claude/skills/` (project-local). To install:
+`.claude/skills/` (project-local). Clone the repo straight into the skills
+folder, so `git pull` keeps it current:
 
 ```bash
-cp -r skills/generate-concept-ui ~/.claude/skills/
-```
-
-Or clone the repo and symlink the skill so `git pull` keeps it current:
-
-```bash
-git clone https://github.com/derek98765/generate-concept-ui.git ~/.claude/skills/.generate-concept-ui-repo
-ln -s .generate-concept-ui-repo/skills/generate-concept-ui ~/.claude/skills/generate-concept-ui
+git clone https://github.com/derek98765/generate-concept-ui.git ~/.claude/skills/generate-concept-ui
 ```
